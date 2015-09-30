@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="StoneTableViewCell" customModule="多页面切换Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="珍珠" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iaz-Pc-bES">
+                        <rect key="frame" x="15" y="15" width="100" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="LyJ-LW-Pgv"/>
+                            <constraint firstAttribute="width" constant="100" id="gkR-Or-XLN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_me_rightArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="lzX-yc-R0H">
+                        <rect key="frame" x="290" y="14" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="5RO-1t-WNW"/>
+                            <constraint firstAttribute="height" constant="15" id="Dxr-nZ-kZU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Iaz-Pc-bES" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="2hn-Tb-OVX"/>
+                    <constraint firstItem="Iaz-Pc-bES" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="2lV-td-f9j"/>
+                    <constraint firstItem="lzX-yc-R0H" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="hIp-VR-FAR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="lzX-yc-R0H" secondAttribute="trailing" constant="7" id="jYc-dp-TiY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="title" destination="Iaz-Pc-bES" id="cR4-xn-pfd"/>
+            </connections>
+            <point key="canvasLocation" x="259" y="281"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_me_rightArrow.png" width="15" height="15"/>
+    </resources>
+</document>
